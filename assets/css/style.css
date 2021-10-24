@@ -40,6 +40,8 @@
     background-color: rgb(29, 112, 151);
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .nav-bar ul {
@@ -66,22 +68,36 @@
 .section-title {
     color: rgb(29, 112, 151);
     font-size: 42px;
-    border-bottom: 4px solid royalblue;
+    border-bottom: 2px solid royalblue;
     text-align: center;
     display: inline-block;
-    padding-bottom: 20px;
+    padding: 0px 200px 20px 200px;
 }
 
 .main-content {
     background-color: rgba(209, 204, 174, 1);
 }
 
-#about-me, #contact-me {
+#about-me, #contact-me, #my-projects {
     text-align: center;
 }
 
-.fa {
+.my-projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#my-projects a img {
+    height: 350px;
+    width: 550px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    padding: 0;
     margin: 10px;
+}
+
+.fa {
+    margin: 10px 10px 25px 10px;
     padding: 10px;
     font-size: 30px;
     width: 40px;
@@ -103,6 +119,6 @@
 }
 
 .fa-envelope {
-    background-color: gray;
+    background-color: #3b5998;
     color: white;
 }
