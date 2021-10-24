@@ -1,0 +1,64 @@
+.hero {
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: block;
+    flex-wrap: wrap;
+    color: rgb(29, 112, 151);
+}
+.hero h2 {
+    font-size: 42px;
+    text-align: center;
+}
+.hero h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.hero-box {
+    width: 30%;
+    height: 30%;
+    background-color: rgba(209, 204, 174, 0.8);
+    left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.self-img {
+    display: flex;
+    margin: 5px 20px 5px 20px;
+    padding: 25px;
+}
+
+.self-img img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: rgb(29, 112, 151);
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li a {
+    padding: 10px 15px;
+    margin: 15px;
+    color: rgba(209, 204, 174, 1);
+    font-weight: bold;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 15px;
+    margin: 15px;
+    line-height: 2;
+}
