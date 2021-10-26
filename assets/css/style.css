@@ -1,3 +1,7 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .hero {
     background-image: url(../images/hero.png);
     background-size: cover;
@@ -10,10 +14,12 @@
 .hero h2 {
     font-size: 42px;
     text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
 }
 .hero h3 {
     font-size: 30px;
     text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
 
 .hero-box {
@@ -63,15 +69,37 @@
     padding: 15px;
     margin: 15px;
     line-height: 2;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.nav-bar ul li a:hover {
+    opacity: 0.5;
+}
+
+#about-me {
+    text-align: center;
+}
+
+#about-me article h2 {
+    color: rgb(29, 112, 151);
+    font-size: 42px;
+    padding: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#about-me article p {
+    color: rgb(29, 112, 151);
+    font-size: 28px;
 }
 
 .section-title {
     color: rgb(29, 112, 151);
     font-size: 42px;
-    border-bottom: 2px solid royalblue;
+    border-bottom: 2px solid rgb(72, 178, 228);
     text-align: center;
     display: inline-block;
-    padding: 0px 200px 20px 200px;
+    padding: 0px 200px 25px 200px;
 }
 
 .main-content {
@@ -85,19 +113,81 @@
 .my-projects-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+#my-projects div a {
+    opacity: 1;
+}
+
+#my-projects div a:hover {
+    opacity: 0.75;
+}
+
+#my-projects a {
+    text-decoration: none;
+    position: relative;
+}
+
+
 #my-projects a img {
-    height: 350px;
     width: 550px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    height: 200px;
+    border: 5px solid rgb(29, 112, 151);
     padding: 0;
-    margin: 10px;
+    margin: 15px;
+    opacity: 0.75;
+}
+
+#first-application a img {
+    width: 80%;
+    height: 55%;
+}
+
+.app-label {
+    width: 25%;
+    height: auto;
+    background-color: rgba(209, 204, 174, 0.5);
+    z-index: 9998;
+    color: rgb(29, 112, 151);
+    background-color: rgba(209, 204, 174);
+    position: absolute;
+    border: 5px solid rgb(29, 112, 151);
+}
+
+.app-label h3 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#contact-me {
+    background-color: rgb(29, 112, 151);
+}
+
+#contact-me h2{
+    color: rgba(209, 204, 174, 1);
+    border-bottom: 2px solid rgba(209, 204, 174, 1);
+}
+
+#contact-me div p {
+    color: rgba(209, 204, 174, 1);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#contact-me div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact-me div span {
+    margin: 0;
+    padding: 0;
 }
 
 .fa {
-    margin: 10px 10px 25px 10px;
+    margin: 10px 50px 0px 50px;
     padding: 10px;
     font-size: 30px;
     width: 40px;
@@ -106,6 +196,10 @@
     border-radius: 10%;
     border: 2px solid black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+}
+
+.fa:hover {
+    opacity: 0.5;
 }
 
 .fa-facebook {
