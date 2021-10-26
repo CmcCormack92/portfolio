@@ -14,17 +14,16 @@
 .hero h2 {
     font-size: 42px;
     text-align: center;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
 .hero h3 {
     font-size: 30px;
     text-align: center;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
 }
 
 .hero-box {
     width: 30%;
-    height: 30%;
     background-color: rgba(209, 204, 174, 0.8);
     left: 0px;
     display: flex;
@@ -215,4 +214,124 @@
 .fa-envelope {
     background-color: #3b5998;
     color: white;
+}
+
+@media screen and (max-width: 980px) {
+    .fa {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar ul li a {
+        font-size: 3vw;
+    }
+    
+    .hero-box {
+        width: 50%;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+
+    .self-img {
+        padding: 25px;
+        margin: 10px 60px;
+    }
+
+    .section-title {
+        padding: 0px 125px 25px 125px;
+        font-size: 30px;
+    }
+
+    #my-projects a img {
+        width: 500px;
+    }
+
+    #contact-me div p {
+        font-size: 15px;
+    }
+
+    #about-me article h2 {
+        font-size: 30px;
+    }
+
+    #about-me article p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .nav-bar ul li a {
+        padding: 10px 5px;
+        margin: 5px;
+    }
+    
+    .hero-box {
+        width: 100%;
+        background-color: rgba(209, 204, 174, 0.65);
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero h3 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        padding: 0px 75px 15px 75px;
+        font-size: 25px;
+    }
+
+    #my-projects a img {
+        width: 300px;
+    }
+
+    #first-application a img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .app-label h3 {
+        font-size: 15px;
+    }
+
+    .app-label h4 {
+        font-size: 12px;
+    }
+
+    #contact-me div p {
+        font-size: 1px;
+        opacity: 0;
+    }
+
+    #about-me article h2 {
+        font-size: 25px;
+    }
+
+    #about-me article p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .fa {
+        margin: 0 10px 20px 10px;
+        padding: 5px;
+    }
+
+    .fa-envelope {
+        margin-right: 50px;
+    }
+
+    #contact-me div {
+        justify-content: space-evenly;
+    }
 }
