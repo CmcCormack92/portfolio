@@ -1,6 +1,10 @@
+/* Applied to all */
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* Hero/ Header */
 
 .hero {
     background-image: url(../images/hero.png);
@@ -41,6 +45,8 @@
     width: 100%;
 }
 
+/* Nav bar */
+
 .nav-bar {
     background-color: rgb(29, 112, 151);
     position: -webkit-sticky;
@@ -59,14 +65,12 @@
 }
 
 .nav-bar ul li a {
-    padding: 10px 15px;
+    padding: 25px;
     margin: 15px;
     color: rgba(209, 204, 174, 1);
     font-weight: bold;
     font-size: 2vw;
     text-decoration: none;
-    padding: 15px;
-    margin: 15px;
     line-height: 2;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
 }
@@ -75,22 +79,17 @@
     opacity: 0.5;
 }
 
-#about-me {
+/* Main Content section */
+
+.main-content {
+    background-color: rgba(209, 204, 174, 1);
+}
+
+#about-me, #contact-me, #my-projects {
     text-align: center;
 }
 
-#about-me article h2 {
-    color: rgb(29, 112, 151);
-    font-size: 42px;
-    padding: 30px;
-    margin: 0;
-    font-weight: bold;
-}
-
-#about-me article p {
-    color: rgb(29, 112, 151);
-    font-size: 28px;
-}
+/* Section Titles */
 
 .section-title {
     color: rgb(29, 112, 151);
@@ -101,13 +100,25 @@
     padding: 0px 200px 25px 200px;
 }
 
-.main-content {
-    background-color: rgba(209, 204, 174, 1);
+/* About Me */
+
+#about-me article {
+    text-align: left;
 }
 
-#about-me, #contact-me, #my-projects {
-    text-align: center;
+#about-me article h3 {
+    color: rgb(29, 112, 151);
+    font-size: 30px;
+    margin: 0px 0px 10px 10px;
 }
+
+#about-me article p {
+    color: rgb(29, 112, 151);
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+/* My Projects Section */
 
 .my-projects-content {
     display: flex;
@@ -158,6 +169,8 @@
     font-size: 25px;
     font-weight: bolder;
 }
+
+/* Contact Me Section */
 
 #contact-me {
     background-color: rgb(29, 112, 151);
@@ -216,6 +229,8 @@
     color: white;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 980px) {
     .fa {
         margin-bottom: 15px;
@@ -257,8 +272,9 @@
         font-size: 15px;
     }
 
-    #about-me article h2 {
-        font-size: 30px;
+    #about-me article h3 {
+        font-size: 25px;
+        margin-left: 20px;
     }
 
     #about-me article p {
@@ -271,6 +287,7 @@
     .nav-bar ul li a {
         padding: 10px 5px;
         margin: 5px;
+        font-size: 4vw;
     }
     
     .hero-box {
@@ -287,16 +304,16 @@
     }
 
     .section-title {
-        padding: 0px 75px 15px 75px;
-        font-size: 25px;
+        padding: 0px 50px 15px 50px;
+        font-size: 20px;
     }
 
     #my-projects a img {
-        width: 300px;
+        width: 250px;
     }
 
     #first-application a img {
-        width: 300px;
+        width: 250px;
         height: 200px;
     }
 
@@ -313,12 +330,12 @@
         opacity: 0;
     }
 
-    #about-me article h2 {
-        font-size: 25px;
+    #about-me article h3 {
+        font-size: 16px;
     }
 
     #about-me article p {
-        font-size: 18px;
+        font-size: 14px;
         padding: 0 10px;
     }
 
@@ -328,10 +345,6 @@
     }
 
     .fa-envelope {
-        margin-right: 50px;
-    }
-
-    #contact-me div {
-        justify-content: space-evenly;
+        margin-right: 42px;
     }
 }
