@@ -166,7 +166,7 @@
 }
 
 .app-label h3 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder;
 }
 
@@ -268,6 +268,14 @@
         width: 500px;
     }
 
+    .app-label h3 {
+        font-size: 18px;
+    }
+
+    .app-label h4 {
+        font-size: 16px;
+    }
+
     #contact-me div p {
         font-size: 15px;
     }
@@ -318,11 +326,11 @@
     }
 
     .app-label h3 {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .app-label h4 {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     #contact-me div p {
